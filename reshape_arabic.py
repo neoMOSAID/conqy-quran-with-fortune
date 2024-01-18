@@ -2,13 +2,17 @@
 # You can install it using: pip install arabic-reshaper
 # install bidi using      : pip install python-bidi
 
-import arabic_reshaper
+from arabic_reshaper import ArabicReshaper
 from bidi.algorithm import get_display
 import sys
+import os
+
+script_directory = os.path.dirname(os.path.realpath(__file__))
+config_file_path = os.path.join(script_directory, 'config.ini')
 
 def reshape_and_wrap_arabic_text(text, line_length):
-    #arabic_reshaper.delete_harakat=False
-    reshaped_text = arabic_reshaper.reshape(text)
+    reshaper = ArabicReshaper(configuration_file=config_file_path)
+    reshaped_text = reshaper.reshape(text)
     bidi_text = get_display(reshaped_text)
 
     # Split the text into words

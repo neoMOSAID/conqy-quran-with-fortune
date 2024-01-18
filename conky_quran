@@ -36,6 +36,6 @@ conky.config = {
 }
 
 conky.text = [[
-	${execi 10 /home/mosaid/.i3/conky/conky_quran/reshape_arabic.sh }
+	${execi 25 /home/mosaid/.i3/conky/conky_quran/reshape_arabic.sh }
 ]]
 
