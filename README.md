@@ -2,6 +2,9 @@
 
 Display random Quran verses on your desktop using Conky.
 
+![conky-quran-1](https://github.com/neoMOSAID/conqy-quran-with-fortune/assets/45760958/be8383c4-4fdd-4cb4-8b75-3129dff7dcc7)
+
+
 ## Overview
 
 This project enables you to integrate a unique Conky setup that displays random Quran verses on your desktop. It consists of Python and shell scripts, along with Conky configuration, to create a visually pleasing and informative desktop environment.
