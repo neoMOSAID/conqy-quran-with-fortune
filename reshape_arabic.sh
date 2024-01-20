@@ -4,8 +4,8 @@
 #
 
 number='^[0-9]*$'
-fortune_data_directory="${HOME}/.i3/conky/conky_quran/quran_fortune/"
-python_script="${HOME}/.i3/conky/conky_quran/reshape_arabic.py"
+fortune_data_directory="$(dirname "$0" )/quran_fortune/"
+python_script="$(dirname "$0" )/reshape_arabic.py"
 fortune_file_number="$(dirname "$0")/fortune_file_number"
 
 arg=$(cat $fortune_file_number 2>/dev/null)

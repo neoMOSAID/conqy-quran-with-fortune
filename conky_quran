@@ -36,6 +36,8 @@ conky.config = {
 }
 
 conky.text = [[
+${if_match "${exec cat /tmp/my_i3_ws}" != "9" }\
 	${execi 25 /home/mosaid/.i3/conky/conky_quran/reshape_arabic.sh }
+${endif}\
 ]]
 
